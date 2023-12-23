@@ -29,3 +29,28 @@ Repeat: Repeat the process until the target value is found or the search interva
 Binary search is an efficient algorithm with a time complexity of O(log n), where n is the number of elements in the array. This is in contrast to linear search, which has a time complexity of O(n) for an array of n elements. However, binary search can only be applied to sorted arrays or lists. 
 
 The key advantage of binary search is its efficiency, especially for large datasets, as it reduces the search space by half in each iteration. This makes it particularly useful when searching in large databases or when the cost of accessing elements is high. 
+
+
+# Interpolation search 
+
+is an algorithm for finding a specific value in a sorted array. It is an improvement over binary search, particularly when the elements in the array are uniformly distributed. The key idea behind interpolation search is to estimate the likely position of the target value based on its value and the values at the ends of the range.
+Here are the main steps involved in the interpolation search algorithm:
+
+Estimation of Position:
+Use an interpolation formula to estimate the probable position of the target value.
+The formula is often based on the assumption of a uniform distribution of values in the array.
+
+Comparison:
+Compare the estimated value with the target value.
+
+Adjustment of Search Range:
+Based on the comparison, narrow down the search range.
+If the estimated value is equal to the target value, the search is successful.
+If the estimated value is greater than the target value, search in the left portion of the range.
+If the estimated value is smaller than the target value, search in the right portion of the range.
+
+Repeat:
+Repeat the process until the target value is found or the search range becomes empty.
+Interpolation search can be more efficient than binary search in scenarios where the distribution of values is known to be relatively uniform. However, it may not perform as well in cases where the distribution is skewed or irregular.
+
+The time complexity of interpolation search is generally O(log log n) under the assumption of a uniform distribution, but it can degrade to O(n) in the worst case if the distribution is highly uneven.
