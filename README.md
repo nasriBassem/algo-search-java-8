@@ -39,6 +39,7 @@ Here are the main steps involved in the interpolation search algorithm:
 Estimation of Position:
 Use an interpolation formula to estimate the probable position of the target value.
 The formula is often based on the assumption of a uniform distribution of values in the array.
+![image](https://github.com/nasriBassem/algo-search-java-8/assets/16077655/16136ee6-0212-409b-aaf5-15f8ce0a0c75)
 
 Comparison:
 Compare the estimated value with the target value.
