@@ -11,3 +11,21 @@ If the current element is not equal to the target value, move on to the next ele
 Search Outcome: If the target value is found, return the index of the element containing the target value; otherwise, return a signal indicating that the target value is not present in the list. 
 
 Linear search has a time complexity of O(n), where n is the number of elements in the list. This means that the time it takes to perform a linear search is directly proportional to the size of the input. While linear search is simple and easy to implement, it may not be the most efficient algorithm for large datasets compared to more advanced algorithms like binary search (for sorted lists) or hash-based searches. 
+
+
+# Binary search 
+
+Binary Search is a search algorithm that finds the position of a target value within a sorted array or list. The basic idea behind binary search is to repeatedly divide the search interval in half. 
+
+Here's a step-by-step explanation of how binary search works: 
+Initialization: Start with the entire sorted array or list and define the search interval. 
+Middle Element: Find the middle element of the current search interval. 
+Comparison: Compare the middle element with the target value. 
+If the middle element is equal to the target value, the search is successful, and the index of the middle element is returned. 
+If the target value is less than the middle element, repeat the search on the left half of the array. 
+If the target value is greater than the middle element, repeat the search on the right half of the array. 
+Repeat: Repeat the process until the target value is found or the search interval becomes empty. 
+
+Binary search is an efficient algorithm with a time complexity of O(log n), where n is the number of elements in the array. This is in contrast to linear search, which has a time complexity of O(n) for an array of n elements. However, binary search can only be applied to sorted arrays or lists. 
+
+The key advantage of binary search is its efficiency, especially for large datasets, as it reduces the search space by half in each iteration. This makes it particularly useful when searching in large databases or when the cost of accessing elements is high. 
