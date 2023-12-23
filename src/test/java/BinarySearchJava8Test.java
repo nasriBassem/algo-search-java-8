@@ -29,5 +29,4 @@ public class BinarySearchJava8Test {
         List<Integer> elements = Arrays.asList(1,2,3,4);
         assertEquals(binarySearchJava8.binarySearch(elements,5), -1);
     }
-
 }
