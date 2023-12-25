@@ -1,8 +1,10 @@
+package com.search.algorithm;
+
 import java.util.List;
 
 public class InterpolationSearchJava8 {
 
-    static int interpolationSearch(final List<Integer> elements, final int x){
+    public static int interpolationSearch(final List<Integer> elements, final int x){
         int lowEnd = 0;
         int highEnd = elements.size()-1;
         int probe= lowEnd + (((highEnd-lowEnd)*(x-elements.get(lowEnd))/(elements.get(highEnd)-elements.get(lowEnd))));

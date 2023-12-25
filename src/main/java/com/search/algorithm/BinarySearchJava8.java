@@ -1,11 +1,11 @@
-/**
+package com.search.algorithm; /**
  * Bassem NASRI
  * Binary Java Search in Java 8
  */
 import java.util.List;
 
 public class BinarySearchJava8 {
-    static int binarySearch(final List<Integer> elements, final int x) {
+    public static int binarySearch(final List<Integer> elements, final int x) {
         int start = 0;
         int stop = elements.size() - 1;
         int middle = (start + stop) / 2;

@@ -1,3 +1,6 @@
+package search.algorithm;
+
+import com.search.algorithm.InterpolationSearchJava8;
 import org.junit.Test;
 
 import java.util.Arrays;
