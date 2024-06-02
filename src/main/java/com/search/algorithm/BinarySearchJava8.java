@@ -15,4 +15,16 @@ public class BinarySearchJava8 {
         }
         return (middle < elements.size()) ? ((elements.get(middle) != x) ? -1 : middle) : -1;
     }
+    
+    static boolean existsBinarySearch(int[] array, int numberToFind) {
+
+          // Trier le tableau
+        Arrays.sort(array);
+
+        // Rechercher le nombre en utilisant Arrays.binarySearch
+        int index = Arrays.binarySearch(array, numberToFind);
+
+        // retourner true ou false
+		return index >= 0 ? true : false ;
+	}
 }
